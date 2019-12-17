@@ -1,0 +1,78 @@
+﻿@model prospectos_comerciales.Data.Entities.Prospecto
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Prospecto</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Empresa)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Empresa)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Direccion)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Direccion)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Comentarios)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Comentarios)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TelefonoRecepcion)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TelefonoRecepcion)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PaginaWeb)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PaginaWeb)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Recepcionista)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Recepcionista)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.IdCiudadNavigation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.IdCiudadNavigation.Id)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.IdColorNavigation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.IdColorNavigation.Id)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.IdContactoNavigation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.IdContactoNavigation.Id)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.IdSectorNavigation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.IdSectorNavigation.Id)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
